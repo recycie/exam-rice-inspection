@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM"],  // Added DOM for broader type support
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "types": ["node", "express"],  // Added explicit types
+    "declaration": true,           // Generates corresponding .d.ts files
+    "sourceMap": true,            // Generates source maps for debugging
+    "noImplicitAny": true,        // Raise error on expressions and declarations with an implied any type
+    "allowJs": true,              // Allow JavaScript files to be compiled
+    "checkJs": true              // Report errors in .js files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
